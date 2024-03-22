@@ -23,3 +23,8 @@ Es kann vorkommen, dass Powershell uns nicht erlaubt, Skripte auszuführen. In d
 ## Entwicklung
 
 Wenn wir den TS-Compiler anweisen wollen, die TS-Dateien in JS-Dateien umzuwandeln, machen wir das mittels `tsc DATEINAME`. Der Befehl `tsc DATEINAME -w` werden Änderungen live compiled.
+
+## tsconfig.json
+
+In der tsconfig.json können wir die Einstellungen für den TS-Compiler festlegen. So können wir beispielsweise den Output-Ordner festlegen, den Target, den Module, etc.
+Die tsconfig.json kann mittels `tsc --init` erstellt werden.
