@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Obstsalat</h1>
+
+  <form id="form">
+
+    <h2>Wie groß soll die Schüssel sein?</h2>
+
+    <label for="groesse">Größe der Schüssel:</label>
+    <p><select name="groesse" id="groesse">
+        <option value="klein">klein</option>
+        <option value="mittel" selected>mittel</option>
+        <option value="groß">groß</option>
+      </select></p>
+
+    <label for="farbe">Farbe der Schüssel:</label>
+    <p><input type="text" name="farbe" id="farbe" placeholder="violett"></p>
+
+    <label for="obst">Obstsorten:</label>
+    <p><input type="checkbox" name="obst" value="Apfel" checked>Apfel</p>
+    <p><input type="checkbox" name="obst" value="Birne">Birne</p>
+    <p><input type="checkbox" name="obst" value="Kiwi">Kiwi</p>
+    <p><input type="checkbox" name="obst" value="Banane" checked>Banane</p>
+
+    <p><input type="reset" value="Eingabe zurücksetzen"></p>
+    <p><input type="submit" value="Eingabe abschicken"></p>
+
+  </form>
+
+  <h2>Ergebnis:</h2>
+  <p id="ergebnis"></p>
+
+  <script type="module" src="../dist/app.js"></script>
+</body>
+
+</html>
